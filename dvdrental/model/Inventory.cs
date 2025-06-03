@@ -13,7 +13,9 @@ namespace dvdrental.model
         public int FilmId { get; set; } //foreign key
         public int StoreId { get; set; } //foreign key
         public DateTime LastUpdate { get; set; } //timestamp
+
         public Film Film { get; set; } = new Film();
         public List<Rental> Rentals { get; set; } = new List<Rental>();
+        public Store Store { get; set; } = new Store();
     }
 }
